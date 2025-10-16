@@ -1,0 +1,190 @@
+
+> open-webui@0.6.33 dev
+> npm run pyodide:fetch && vite dev --host
+
+
+> open-webui@0.6.33 pyodide:fetch
+> node scripts/prepare-pyodide.js
+
+Setting up pyodide + micropip
+Pyodide package not found, proceeding with download. Error: ENOENT: no such file or directory, open 'static/pyodide/package.json'
+    at async open (node:internal/fs/promises:641:25)
+    at async readFile (node:internal/fs/promises:1245:14)
+    at async downloadPackages (file:///workspace/open-webui/scripts/prepare-pyodide.js:71:41)
+    at async file:///workspace/open-webui/scripts/prepare-pyodide.js:121:1 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'static/pyodide/package.json'
+}
+Loading micropip package
+Loading micropip
+Didn't find package micropip-0.10.1-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package micropip-0.10.1-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded micropip
+Downloading Pyodide packages: [
+  'micropip',   'packaging',
+  'requests',   'beautifulsoup4',
+  'numpy',      'pandas',
+  'matplotlib', 'scikit-learn',
+  'scipy',      'regex',
+  'sympy',      'tiktoken',
+  'seaborn',    'pytz',
+  'black',      'openai'
+]
+Installing package: micropip
+Installing package: packaging
+Loading packaging
+Didn't find package packaging-24.2-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package packaging-24.2-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded packaging
+Installing package: requests
+Loading certifi, charset-normalizer, idna, requests, urllib3
+Didn't find package requests-2.32.4-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package charset_normalizer-3.4.2-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package urllib3-2.5.0-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package idna-3.10-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package certifi-2025.7.14-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package requests-2.32.4-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package idna-3.10-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package charset_normalizer-3.4.2-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package certifi-2025.7.14-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package urllib3-2.5.0-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded certifi, charset-normalizer, idna, requests, urllib3
+Installing package: beautifulsoup4
+Loading beautifulsoup4, soupsieve, typing-extensions
+Didn't find package beautifulsoup4-4.13.3-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package soupsieve-2.6-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package typing_extensions-4.14.1-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package beautifulsoup4-4.13.3-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package soupsieve-2.6-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package typing_extensions-4.14.1-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded beautifulsoup4, soupsieve, typing-extensions
+Installing package: numpy
+Loading numpy
+Didn't find package numpy-2.2.5-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package numpy-2.2.5-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded numpy
+Installing package: pandas
+numpy already loaded from default channel
+Loading pandas, python-dateutil, pytz, six
+Didn't find package pandas-2.3.1-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package python_dateutil-2.9.0.post0-py2.py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package six-1.17.0-py2.py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package pytz-2025.2-py2.py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package pytz-2025.2-py2.py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package six-1.17.0-py2.py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package python_dateutil-2.9.0.post0-py2.py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package pandas-2.3.1-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded pandas, python-dateutil, pytz, six
+Installing package: matplotlib
+numpy already loaded from default channel
+six already loaded from default channel
+packaging already loaded from default channel
+python-dateutil already loaded from default channel
+pytz already loaded from default channel
+Loading Pillow, contourpy, cycler, fonttools, kiwisolver, matplotlib, pyparsing
+Didn't find package matplotlib-3.8.4-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package cycler-0.12.1-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package fonttools-4.56.0-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package contourpy-1.3.1-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package kiwisolver-1.4.8-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package pillow-11.3.0-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package pyparsing-3.2.1-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package contourpy-1.3.1-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package cycler-0.12.1-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package kiwisolver-1.4.8-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package pyparsing-3.2.1-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package fonttools-4.56.0-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package pillow-11.3.0-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package matplotlib-3.8.4-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded Pillow, contourpy, cycler, fonttools, kiwisolver, matplotlib, pyparsing
+Installing package: scikit-learn
+numpy already loaded from default channel
+Loading joblib, libopenblas, scikit-learn, scipy, threadpoolctl
+Didn't find package scikit_learn-1.7.0-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package libopenblas-0.3.26.zip locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package scipy-1.14.1-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package joblib-1.4.2-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package threadpoolctl-3.5.0-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package joblib-1.4.2-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package threadpoolctl-3.5.0-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package libopenblas-0.3.26.zip loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package scikit_learn-1.7.0-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package scipy-1.14.1-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded joblib, libopenblas, scikit-learn, scipy, threadpoolctl
+Installing package: scipy
+Installing package: regex
+Loading regex
+Didn't find package regex-2024.11.6-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package regex-2024.11.6-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded regex
+Installing package: sympy
+Loading mpmath, sympy
+Didn't find package sympy-1.13.3-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package mpmath-1.3.0-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package mpmath-1.3.0-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package sympy-1.13.3-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded mpmath, sympy
+Installing package: tiktoken
+regex already loaded from default channel
+requests already loaded from default channel
+Loading tiktoken
+Didn't find package tiktoken-0.9.0-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package tiktoken-0.9.0-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded tiktoken
+Installing package: seaborn
+Installing package: pytz
+Installing package: black
+Loading click, platformdirs
+Didn't find package click-8.2.1-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package platformdirs-4.3.6-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package platformdirs-4.3.6-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package click-8.2.1-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded click, platformdirs
+Installing package: openai
+typing-extensions already loaded from default channel
+Loading annotated-types, anyio, distro, httpx, jiter, libopenssl, openai, pydantic, pydantic_core, sniffio, ssl
+Didn't find package openai-1.68.2-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package httpx-0.28.1-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package pydantic-2.10.6-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package pydantic_core-2.27.2-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package annotated_types-0.7.0-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package distro-1.9.0-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package ssl-1.0.0-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package libopenssl-1.1.1w.zip locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package anyio-4.9.0-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package sniffio-1.3.1-py3-none-any.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Didn't find package jiter-0.9.0-cp313-cp313-pyodide_2025_0_wasm32.whl locally, attempting to load from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/
+Package httpx-0.28.1-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package annotated_types-0.7.0-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package openai-1.68.2-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package distro-1.9.0-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package anyio-4.9.0-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package ssl-1.0.0-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package pydantic-2.10.6-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package sniffio-1.3.1-py3-none-any.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package pydantic_core-2.27.2-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package jiter-0.9.0-cp313-cp313-pyodide_2025_0_wasm32.whl loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Package libopenssl-1.1.1w.zip loaded from https://cdn.jsdelivr.net/pyodide/v0.28.2/full/, caching the wheel in node_modules for future use.
+Loaded annotated-types, anyio, distro, httpx, jiter, libopenssl, openai, pydantic, pydantic_core, sniffio, ssl
+Pyodide packages downloaded, freezing into lock file
+Copying Pyodide files into static directory
+▲ [WARNING] Cannot find base config file "./.svelte-kit/tsconfig.json" [tsconfig.json]
+
+    tsconfig.json:2:12:
+      2 │   "extends": "./.svelte-kit/tsconfig.json",
+        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+5:49:42 AM [vite-plugin-svelte] WARNING: The following packages have a svelte field in their package.json but no exports condition for svelte.
+
+@sveltejs/svelte-virtual-list@3.0.1
+
+Please see https://github.com/sveltejs/vite-plugin-svelte/blob/main/docs/faq.md#missing-exports-condition for details.
+Forced re-optimization of dependencies
+
+  VITE v5.4.19  ready in 1501 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://172.30.0.2:5173/
+[vite-plugin-static-copy] Collected 2 items.
