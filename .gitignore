@@ -1,16 +1,11 @@
-# Environment
-.env
-
-# OpenWebUI local clone
-open-webui/
-
-# OpenWebUI persistent data
-openwebui-data/
-
-# Common ignores
-node_modules/
-dist/
-build/
 __pycache__/
 *.pyc
+*.pyo
+.env
+venv/
+.python-version
 .DS_Store
+.idea/
+.vscode/
+.data/
+data/
